@@ -2,6 +2,7 @@
 node_modules/
 dist/
 workspaceStorage/
+globalStorage/
 *.docx
 *.zip
 *.html
