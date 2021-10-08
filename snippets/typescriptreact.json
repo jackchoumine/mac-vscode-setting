@@ -1,0 +1,61 @@
+{
+  "fn": {
+    "prefix": "fn",
+    "description": "箭头函数",
+    "body": [
+      "($0) => {",
+      "  $1",
+      "}",
+      ""
+    ]
+  },
+  "log": {
+    "prefix": "log",
+    "description": "console.log",
+    "body": [
+      "console.log($1)"
+    ]
+  },
+  "trcc": {
+    "prefix": "trcc",
+    "description": "react 类组件",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export interface IProps {}",
+      "export interface IState {}",
+      "",
+      "export default class $TM_FILENAME_BASE extends Component<IProps, IState> {",
+      "  state = {}",
+      "  render() {",
+      "    return <div></div>",
+      "  }",
+      "}",
+      ""
+    ]
+  },
+  "mrfc": {
+    "prefix": "trfc",
+    "description": "react 函数式组件",
+    "body": [
+      "import React, { FC, useState } from 'react'",
+      "interface ${TM_FILENAME_BASE}Props {}",
+      "",
+      "const $TM_FILENAME_BASE: FC<${TM_FILENAME_BASE}Props> = ({ children }) => {",
+      "  const [${1:test}, set${1:Test}] = useState<{}>($0)",
+      "  return <div>{children}</div>",
+      "}",
+      "export default $TM_FILENAME_BASE"
+    ]
+  },
+  "tpcr": {
+  "prefix": "tpcr",
+  "body": [
+    "children: PropTypes.oneOfType([",
+    "  PropTypes.arrayOf(PropTypes.node),",
+    "  PropTypes.node",
+    "]).isRequired"
+  ],
+  "description": "react孩子"
+}
+}

@@ -1,0 +1,36 @@
+{
+  "vue template": {
+    "prefix": "vue",
+    "body": [
+      "<template>",
+      " <div>",
+      " ",
+      " </div>",
+      "</template>",
+      "<script>",
+      " export default {",
+      "   name:'$1',",
+      "   components: {",
+      " ",
+      "   },",
+      "   data () {",
+      "     return {",
+      " ",
+      "     }",
+      "   },",
+      "   computed:{",
+      " ",
+      "   },",
+      "   methods:{",
+      " ",
+      "   },",
+      " }",
+      "</script>",
+      "<style scoped lang=\"scss\">",
+      " ",
+      "</style>",
+      ""
+    ],
+    "description": "vue 自定义模板"
+  }
+}

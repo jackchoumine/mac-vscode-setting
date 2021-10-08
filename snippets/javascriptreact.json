@@ -1,0 +1,32 @@
+{
+  "arrowFn": {
+    "prefix": "fn",
+    "body": [
+      "($0)=>{",
+      "  $1",
+      "}"
+    ],
+    "description": "箭头函数"
+  },
+  "console.log": {
+    "prefix": "log",
+    "body": [
+      "console.log($1)"
+    ],
+    "description": "console.log"
+  },
+  "jrcf": {
+    "prefix": "jrcf",
+    "description": "react 函数式组件",
+    "body": [
+      "import React, { useState } from 'react'",
+      "",
+      "const $TM_FILENAME = ({ children }) => {",
+      "  const [test, setTest] = useState < {} > ''",
+      "  return <div>{children}</div>",
+      "}",
+      "export default $TM_FILENAME",
+      ""
+    ]
+  }
+}

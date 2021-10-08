@@ -1,0 +1,29 @@
+{
+  "vue3 template": {
+    "prefix": "v3",
+    "description": "vue3 自定义模板",
+    "body": [
+      "<template>",
+      " <div>",
+      "",
+      " </div>",
+      "</template>",
+      "<script lang='ts'>",
+      "import { ref, reactive, watch, computed, defineComponent } from 'vue'",
+      "export default defineComponent({",
+      "  name:'$TM_FILENAME_BASE',",
+      "  components: {",
+      "",
+      "  },",
+      "  setup(props, { emit, attrs, slots }){",
+      "",
+      "    return {}",
+      "  }",
+      "})",
+      "</script>",
+      "<style scoped lang=\"scss\">",
+      "",
+      "</style>"
+    ]
+  }
+}

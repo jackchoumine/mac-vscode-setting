@@ -1,0 +1,101 @@
+{
+  "http.get": {
+    "prefix": "get",
+    "description": "",
+    "body": [
+      "try {",
+      "  const res = await this.\\$http.get('', params)",
+      "} catch (error) {",
+      "  error.msg && this.\\$message.error(error.msg)",
+      "  console.error(error)",
+      "}",
+      ""
+    ]
+  },
+  "success": {
+    "prefix": "success",
+    "description": "",
+    "body": [
+      "this.\\$message.success('操作成功')",
+      ""
+    ]
+  },
+  "error": {
+    "prefix": "error",
+    "description": "",
+    "body": [
+      "error.msg && this.\\$message.error(error.msg)",
+      "console.error(error)",
+      ""
+    ]
+  },
+  "confirm": {
+    "prefix": "confirm",
+    "description": "",
+    "body": [
+      "try {",
+      "  await this.\\$confirm('此操作不可恢复, 是否继续?', '提示', {",
+      "    confirmButtonText: '确定',",
+      "    cancelButtonText: '取消',",
+      "    type: 'warning',",
+      "  })",
+      "} catch {",
+      "  error.msg && this.\\$message.error(error.msg)",
+      "  console.error(error)",
+      "}",
+      ""
+    ]
+  },
+  "post": {
+    "prefix": "post",
+    "description": "",
+    "body": [
+      "try {",
+      "  await this.\\$http.post('', params)",
+      "} catch (error) {",
+      "  error.msg && this.\\$message.error(error.msg)",
+      "  console.error(error)",
+      "}",
+      ""
+    ]
+  },
+  "prop": {
+    "prefix": "prop",
+    "description": "",
+    "body": [
+      "prop: (h, row) => {",
+      "  const map = { 0: '异常', 1: '正常' }",
+      "  return <span>{map[row.status]}</span>",
+      "}",
+      ""
+    ]
+  },
+  "id": {
+    "prefix": "id",
+    "description": "",
+    "body": [
+      "document.getElementById($1)"
+    ]
+  },
+  "arrowFn": {
+    "prefix": "fn",
+    "body": [
+      "($1)=>{$0}"
+    ],
+    "description": "箭头函数"
+  },
+  "console.log": {
+    "prefix": "log",
+    "body": [
+      "console.log($1)"
+    ],
+    "description": "console.log"
+  },
+  "v2um": {
+    "prefix": "v2um",
+    "description": "",
+    "body": [
+      "destroyed() {$1},"
+    ]
+  }
+}

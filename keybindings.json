@@ -1,0 +1,76 @@
+[
+  {
+    "key": "shift+alt+up",
+    "command": "-editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+up",
+    "command": "-editor.action.smartSelect.grow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+down",
+    "command": "-editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+  },
+  {
+    "key": "cmd+d",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+enter backspace",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+f6",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+f6",
+    "command": "-renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+cmd+u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "cmd+s",
+    "command": "-workbench.action.files.save"
+  },
+  {
+    "key": "cmd+s",
+    "command": "-workbench.action.files.saveAll"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "docthis.documentThis"
+  },
+  {
+    "key": "ctrl+alt+d ctrl+alt+d",
+    "command": "-docthis.documentThis"
+  },
+  {
+    "key": "cmd+s",
+    "command": "workbench.action.files.save"
+  }
+]
